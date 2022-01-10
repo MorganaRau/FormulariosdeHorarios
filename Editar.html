@@ -1,0 +1,135 @@
+ <html lang= "pt-br">
+<html>
+    
+    <head>
+               <!--imagem de fundo -->
+        <style> body{
+     background-image:url('images/background/background.jpg');
+      background-attachment:fixed;
+    background-size:100%;
+            }
+            html {
+  scroll-behavior: smooth;
+}
+        </style>
+        
+        <title>Editar Horário</title>
+        <meta charset="UTF-8">
+       
+       <link rel="stylesheet" href="css/Editar.css"  type="text/css" >
+          </head>
+          
+          
+          
+          
+          <body> 
+                   <!-- título de perfil -->
+              <div class="titulo" > 
+                 <p class="txtT" style="margin-right:20px; "> Perfil: trabalhador </p>
+                  <p class="txtT" style="margin-left:60%; "> Usuário: user </p>
+              </div>
+              
+                    <!-- botões-->
+              
+              <div class="margem"  >
+               <button type="button" class="button1">Inserir</button>
+               <button type="button" class="button1">Editar</button>
+                 <button type="button" class="button1">Visualizar</button>
+          </div>
+              
+                           <!--informações -->
+              <div class="quad">  
+                  
+                   <p class="aviso" style="margin-left:70px;font-size:25px"> Insere Hora: </p>
+                   <p class="aviso" style="margin-left:80px;"> Data</p>
+                    <p class="aviso" style="margin-left:80px;"> Hora de entrada</p>
+                     <p class="aviso" style="margin-left:80px;"> Hora de saída</p>
+                      <p class="aviso" style="margin-left:80px;"> Justificativa</p>
+                  
+                      
+                    
+                      <div >
+                 <p class="aviso" style="margin-left:260px;"> DD/MM/AAAA</p>
+                  <p class="aviso" style="margin-left:80px;"> ##:##</p>
+                   <p class="aviso" style="margin-left:150px;"> ##:##</p>
+                   
+                          <!--tabela -->
+           
+                  <select  name="justif" id="justif" style="margin-left:150px;" > 
+                    <option value="prod_cont">Prod. Conteúdo</option>
+                      <option value="versionamento">Versionamento</option>
+                        <option value="capacitacao">Capacitação</option>
+                          <option value="emprestimo">Empréstimo</option>
+                         
+                  </select>
+                   <button class="button" type="submit" style="margin-left:70%;margin-top:20px" >Acessar</button>
+                      </div>
+               
+                
+                  
+               <p class="aviso" style="margin-left:20px;font-size:25px">Lista de Horas:</p>
+                  <table class="tb" style="margin-left:20px">
+                      <tr> 
+                          <th> Data          </th>
+                      
+                          <th> Hora de entrada </th>
+                           <th> Hora de saída </th>
+                            <th>Total Horas </th>
+                           <th> Justificativa </th>
+                            <th> Opções </th>
+                        </tr>
+                        
+                     
+                          <tr> <td>DD/MM/AAAA </td> 
+                              <td> ##:## </td> 
+                             <td> ##:## </td>
+                              <td> x </td>
+                              
+                                     <!--selecionar -->
+                               <td>    <select  name="justif" id="justif"  > 
+                    <option value="prod_cont">Prod. Conteúdo</option>
+                      <option value="versionamento">Versionamento</option>
+                        <option value="capacitacao">Capacitação</option>
+                          <option value="emprestimo">Empréstimo</option> </select> </td>
+                       <td> <img src="images/config.png" width="25" height="25"> <img src="images/x.png" width="25" height="25">  </td>
+                          </tr>
+                          
+                   <tr> <td>DD/MM/AAAA </td> 
+                              <td> ##:## </td> 
+                             <td> ##:## </td>
+                              <td> x </td>
+                              <td>  produção  </td>
+                            <td>  <img src="images/config.png" width="25" height="25"> <img src="images/x.png" width="25" height="25"></td>
+                 
+                          </tr>
+                     
+                          <tr> <td>DD/MM/AAAA </td> 
+                              <td> ##:## </td> 
+                             <td> ##:## </td>
+                              <td> x </td>
+                              <td>  Capacitação </td>
+                            <td>  <img src="images/config.png" width="25" height="25" alt="configurar"> <img src="images/x.png" width="25" height="25" alt="excluir"></td>
+                 
+                          </tr>
+                  </table>
+               
+                  <div style="margin-left:70%;margin-top:20px"> 
+                      
+                             <!--botões de ação -->
+                  
+                    <button class="button" type="submit"  >enviar para análise</button>
+                      <button class="button" type="submit"  >voltar</button>
+                  </div>
+               
+                      <!--opções de edição -->
+               <div style="margin-top:20px">
+               <p class="aviso" style="font-size:20px; "> Legenda </p>
+                <p class="aviso" style="font-size:15px"> <img src="images/config.png" width="25" height="25" alt="configurar"> Editar </p>
+                <p class="aviso" style="font-size:15px"><img src="images/x.png" width="25" height="25" alt="excluir"> Excluir </p>
+               </div>
+               
+            
+               
+                </div>
+          </body>
+</html>

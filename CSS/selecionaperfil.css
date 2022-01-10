@@ -1,0 +1,70 @@
+body {font-family: Arial, Helvetica, sans-serif;color: white;}
+
+/** titulo **/
+
+.titulo{
+    
+     margin:50px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    padding-left:50px;
+    padding-right:50px;
+    background-color:#1b685c ;
+   
+    font-family: Arial, Helvetica, sans-serif;color: white;
+    border-color:#1b685c;
+    border-radius:20px;
+    font-size: 20px;
+   
+}
+
+
+/** texto  **/
+
+.txtT{
+    font-family:Arial, sans-serif;
+     color:white;
+     font-size:25px;
+    
+    
+     border-radius: 10px;
+     display:inline;
+   
+    padding-left: 10px;
+     padding-right: 10px;
+    bottom:10px;
+}
+
+
+
+
+/**botao **/
+
+button {
+  background-color: #71bfb4;
+  color: white;
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+ text-align: center;
+ font-size:20px;
+  top: 25%;
+  width: 10%;
+
+
+}
+
+
+button:hover {
+  opacity: 0.6;
+}
+
+
+
+.container {
+  padding: 50px;
+  text-align:center;
+ position: relative;
+}

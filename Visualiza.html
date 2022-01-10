@@ -1,0 +1,125 @@
+ <html lang= "pt-br">
+<html>
+    
+    <head> 
+               <!-- imagem de fundo-->
+        <style> body{
+     background-image:url('images/background/background.jpg');
+      background-attachment:fixed;
+    background-size:100%;
+            }
+            html {
+  scroll-behavior: smooth;
+}
+        </style>
+        
+        
+        <title>Visualiza Horário</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/Visualiza.js" ></script>
+       <link rel="stylesheet" href="css/Visualiza.css"  type="text/css" >
+          </head>
+          
+          
+          
+          
+          <body> 
+                  <!-- texto perfil -->
+              <div class="titulo" > 
+                 <p class="txtT" style="margin-right:20px; "> Perfil: trabalhador </p>
+                  <p class="txtT" style="margin-left:60%; "> Usuário: user </p>
+              </div>
+              
+             
+                     <!-- botões -->
+              <div class="margem" >
+               <button type="button" class="button1">Inserir</button>
+               <button type="button" class="button1">Editar</button>
+                 <button type="button" class="button1">Visualizar</button>
+          </div>
+              
+                            <!-- quadro de datas-->
+              <div class="quad">  
+                  
+                                    <div >
+      <label for="mydata1" > <b class="aviso"> Data início:</b></label>
+     <input type="date" class="caixa" style="margin-left:5px;" id="mydata1"  > 
+       <label for="mydata2" > <b class="aviso">Data final:</b></label>
+     <input type="date" class="caixa" style="margin-left:5px;" id="mydata2"  >  
+
+       <label for="ju" > <b class="aviso"> Justificativa:</b></label>
+                   
+           
+                          <!-- seleção-->
+                  <select  name="justif" id="justif" style="margin-left:5px;" > 
+                    <option value="prod_cont">Prod. Conteúdo</option>
+                      <option value="versionamento">Versionamento</option>
+                        <option value="capacitacao">Capacitação</option>
+                          <option value="emprestimo">Empréstimo</option>    
+                  </select>
+                                 <!-- botão -->
+                   <button id="consulta" onclick="datafunc()" class="button1" type="submit" style="margin-left:77%;margin-top:15px" >Consultar</button>
+                      </div>
+            
+                
+                                   <!-- tabela de horas -->
+                  
+               <p class="aviso" style="margin-left:20px;font-size:25px">Lista de Horas:</p>
+                  <table class="tb" style="margin-left:20px">
+                      <tr> 
+                          <th> Data          </th>
+                      
+                          <th> Hora de entrada </th>
+                           <th> Hora de saída </th>
+                            <th>Total Horas </th>
+                           <th> Justificativa </th>
+                           
+                        </tr>
+                        
+                     
+                          <tr> <td>DD/MM/AAAA </td> 
+                              <td> ##:## </td> 
+                             <td> ##:## </td>
+                              <td> x </td>
+                              <td>    Versionamento </td>
+                    
+                    
+                          </tr>
+                          
+                   <tr> <td>DD/MM/AAAA </td> 
+                              <td> ##:## </td> 
+                             <td> ##:## </td>
+                              <td> x </td>
+                              <td>  produção  </td>
+                      
+                 
+                          </tr>
+                     
+                          <tr> <td>DD/MM/AAAA </td> 
+                              <td> ##:## </td> 
+                             <td> ##:## </td>
+                              <td> x </td>
+                              <td>  Capacitação </td>
+                          
+                 
+                          </tr>
+                  </table>
+              
+                       <!--área de download -->
+                     <div style=" margin-top:40px">
+             
+                 <p class="aviso" style="font-size:20px; " > Status: enviado para análise</p>
+               </div>
+                   <div style="margin-left:50%">
+                        
+                       <p class="aviso"> Download:</p>
+                       
+                <p class="aviso" style="font-size:15px"> <img src="images/print.png" width="40" height="40" alt="configurar"> Imprimir </p>
+                <p class="aviso" style="font-size:15px"><img src="images/pdf.png" width="40" height="40" alt="pdf"> PDF </p>
+                 <p class="aviso" style="font-size:15px"><img src="images/excel.png" width="40" height="40" alt="excel"> Excel </p>
+                 
+                </div>
+              </div>
+             
+          </body>
+</html>

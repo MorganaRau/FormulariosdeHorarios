@@ -1,0 +1,156 @@
+
+body {font-family: Arial, Helvetica, sans-serif;color: white;}
+
+
+
+
+/** caixa de login **/
+
+input[type=text], input[type=password] {
+
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  top: 25%;
+  width: 40%;
+ 
+
+}
+
+
+/** fonte principal **/
+.fPrinc{
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align:center;
+    font-size:20px;
+}
+
+
+
+/* botão principal verde aqua */
+button {
+  background-color: #71bfb4;
+  color: white;
+  padding: 10px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+ text-align: center;
+ font-size:20px;
+  top: 25%;
+  width: 10%;
+ 
+
+}
+
+
+button:hover {
+  opacity: 0.6;
+}
+
+/* botão cancelar verde escuro */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color:#3e552d;
+  border: none;
+ border-radius: 20px;
+ text-align: center;
+  font-size:15px;
+}
+
+.container {
+  padding: 50px;
+  text-align:center;
+ position: relative;
+}
+
+/* texto esqueceu a senha com cor verde */
+span.psw {
+
+  padding-top: 16px;
+ color: white;
+ font-family: Arial,sans-serif;
+ font-size:20px;
+}
+
+span:hover{
+    
+     padding-top: 16px;
+ color: white;
+ font-family: Arial,sans-serif;
+ font-size:20px;
+ text-decoration: underline;
+    
+}
+
+
+/* estilo de link com cor verde */
+a{
+    padding-top: 16px;
+ color:white;
+ font-family: Arial,sans-serif;
+ font-size:20px;
+    
+}
+a:hover{
+    padding-top: 16px;
+ color:#71bfb4 ;
+ font-family: Arial,sans-serif;
+ font-size:20px;
+ text-decoration: underline;
+    
+}
+
+
+
+/* estilo de notícias com fundo azul */
+
+.noticias{
+ font-family:Arial, sans-serif;
+     color: white;
+     font-size:20px;
+     text-align:center;
+     border-color:#254981;
+     background-color:#254981;
+     border-radius: 10px;
+ 
+    padding-bottom:20px;
+    padding-top:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+    margin-left: 120px;
+     margin-right: 120px;
+     
+}
+
+/*fonte de aviso com fundo branco*/
+
+.aviso{
+     font-family:Arial, sans-serif;
+     color: #1b685c;
+     font-size:25px;
+     text-align:center;
+     border-color:white;
+     background-color:white;
+     border-radius: 10px;
+    
+     display:inline;
+    padding-left: 10px;
+     padding-right: 10px;
+    bottom:10px;
+}
+
+
+#text{
+    display: block;
+    text-align:center;
+    padding:5px;
+    
+}

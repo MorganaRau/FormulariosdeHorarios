@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang= "pt-br">
+<html>
+    
+    <head>
+        <!-- imagem de fundo -->
+        <style> body{
+     background-image:url('images/background/background.jpg');
+      background-attachment:fixed;
+    background-size:100%;
+            }
+            html {
+  scroll-behavior: smooth;
+}
+        </style>
+        
+        
+        <title>Selecionar perfil</title>
+        <meta charset="UTF-8">
+       
+       <link rel="stylesheet" href="css/selecionaperfil.css"  type="text/css" >
+          </head>
+          
+        
+        
+          <body> 
+               <!-- titulo perfil  -->
+            <div class="titulo" > 
+                 <p class="txtT" style="margin-right:20px; "> Perfil: trabalhador </p>
+                 </div>
+              
+             <form action="/action_page.php"> 
+                  
+                  <!-- seleção -->
+                   <div align="center">
+                  <label  for="perfil"> Selecione o perfil de usuário </label>
+                   <select  name="perfil" id="perfil" > 
+                    <option value="trabalhador">Trabalhador</option>
+                      <option value="coord_curso">Coordenador de curso</option>
+                        <option value="coord_pedag">Coordenador de núcleo pedagógico</option>
+                  </select>
+               
+                  <!-- botão -->
+                  <button onclick="location.href= 'file:///C:/Users/Local%201234/Desktop/apresenta%C3%A7ao/Mod2_home.html'" class="button" type="button" >Acessar</button>
+                   </div>
+              </form>
+          
+              
+          
+          </body>

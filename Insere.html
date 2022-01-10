@@ -1,0 +1,120 @@
+ <html lang= "pt-br">
+<html>
+    
+    <head>
+               <!--imagem de fundo -->
+        <style> body{
+     background-image:url('images/background/background.jpg');
+      background-attachment:fixed;
+    background-size:100%;
+            }
+            html {
+  scroll-behavior: smooth;
+}
+        </style>
+        
+        <title> Inserir Hora</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="js/Insere.js" ></script>
+       <link rel="stylesheet" href="css/Insere.css"  type="text/css" >
+          </head>
+          
+          
+          
+          
+          <body> 
+              
+              
+              
+              
+              
+                   <!--título de perfil -->
+              <div class="titulo" > 
+                 <p class="txtT" style="margin-right:20px; "> Perfil: trabalhador </p>
+                
+              </div>
+              
+             
+                     <!--botões -->
+              <div class="margem" >
+               <button type="button" class="button1">Inserir</button>
+               <button type="button" class="button1">Editar</button>
+                 <button type="button" class="button1">Visualizar</button>
+          </div>
+              
+                            <!--opções de registro -->
+              <div class="quad">  
+                  
+               
+                    
+                      <div >
+      <label for="mydata" > <b class="aviso"> Data:</b></label>
+     <input type="date" class="caixa" style="margin-left:5px;" id="mydata" name="mydata" > 
+       <label for="hEnt" > <b class="aviso"> Hora de Entrada:</b></label>
+     <input type="time" class="caixa" style="margin-left:5px;" id="hEnt" name="hEnt" >  
+       <label for="hSai" > <b class="aviso"> hora de Saída:</b></label>
+     <input type="time" class="caixa" style="margin-left:5px;" id="hSai" name="hSai" > 
+       <label for="ju" > <b class="aviso"> Justificativa:</b></label>
+                          <!--selecionar -->
+                          
+                  <select  name="justif" id="justif" style="margin-left:5px;" > 
+                    <option value="Prod. Conteúdo">Prod. Conteúdo</option>
+                      <option value="Versionamento">Versionamento</option>
+                        <option value="Capacitação">Capacitação</option>
+                          <option value="Empréstimo">Empréstimo</option>     
+                  </select>         
+
+                                 <!--botão inserir -->
+ <button id="insere" onclick="datafunc(),addHtmlTableRow();" class="button" style="margin-left:70%;margin-top:20px" >Inserir Hora</button>
+                      </div>
+               
+                
+               <!-- tabela de horas-->
+               <p class="aviso" style="margin-left:20px;font-size:25px">Lista de Horas:</p>
+                  <table border="1" id="table" class="tb" style="margin-left:20px">
+                      <tr>
+                      <th> Data</th> 
+                      <th>Hora Entrada</th> 
+                      <th> hora saída </th> 
+                      <th> Justificativa</th> 
+                    
+                      </tr>
+                      
+                      <tr>
+                          <td>2019/10/24</td>
+                          <td>18:00</td>
+                          <td>22:00</td>
+                          <td>Prod. Conteúdo </td>
+                          
+                      </tr>
+                      
+                       <tr>
+                          <td>2019/10/10</td>
+                          <td>14:00</td>
+                          <td>17:00</td>
+                          <td>Empréstimo </td>
+                      </tr>
+                      
+              </table>
+               
+                  <div style="margin-left:70%;margin-top:20px"> 
+                    
+                              <!-- botões de enviar-->
+                      
+                      <button class="button" type="submit" > enviar para análise</button>
+                      <button onclick="location.href='file:///C:/Users/Local%201234/Desktop/Mod3%20Javascript/Visualiza.html'" class="button" type="button" id="voltar" >voltar</button>
+                  </div>
+               
+                      <!--opções de download -->
+               <div style="margin-top:20px">
+              
+    <button onclick="editRow();" class="aviso" style="font-size:15px"> <img src="images/config.png" width="25" height="25" alt="configurar"> Editar </button>
+    <button onclick=" deleteRow();" class="aviso" style="font-size:15px"><img src="images/x.png" width="25" height="25" alt="excluir"> Excluir </button>
+                
+               </div>
+              
+                </div>
+        
+     
+          </body>
+</html>
